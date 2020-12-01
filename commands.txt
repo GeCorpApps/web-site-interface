@@ -1,0 +1,3 @@
+-------------------------ANGULAR--------------------
+ng xi18n --out-file src/locale/ka.xlf // ამოიღებს ყველა კომპონენტიდან სათარგმნ სიტყვებს
+ng xi18n -op src/locale --outFile ka.xlf -l ka

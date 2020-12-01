@@ -92,12 +92,21 @@ export class LayoutHeaderComponent implements OnInit {
     console.log("HEADER Keyword: ", $vKeyworkd);
   }
 
+  public changeLang(lang: string) {
+    if (lang === 'ka') {
+      localStorage.setItem('locale', 'ka');
+    }
+    if (lang === 'en') {
+      localStorage.setItem('locale', 'en');
+    }
+  }
+
   public setLanguage = (language) => {
     if (this.language === language) return;
     this.language = language;
     
     console.log('[LANGUAGE SWITCH TRIGGERED] setting language value to '+this.language);
     this.winRef.nativeWindow.document.locale=this.language;
-}
+  }
 
 }

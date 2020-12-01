@@ -1,10 +1,18 @@
 import { TRANSLATIONS, TRANSLATIONS_FORMAT, LOCALE_ID } from '@angular/core';
 
+export function getCurrentLocale() {
+  var currentLocale: any = localStorage.getItem("locale");
+  if(currentLocale == undefined || !currentLocale || currentLocale == "") {
+    currentLocale = 'ka';
+  }
+  return currentLocale;
+}
+
 export function getTranslationProviders(): Promise<Object[]> {
 
   // Get the locale id from the global
   const locale = document['locale'] as string;
-
+  console.log("locale: " + locale);
   // return no providers if fail to get translation file for locale
   const noProviders: Object[] = [];
 
@@ -14,7 +22,7 @@ export function getTranslationProviders(): Promise<Object[]> {
   }
 
   // Ex: 'locale/messages.fr.xlf`
-  const translationFile = `./locale/${locale}.xlf`;
+  const translationFile = `../locale/${locale}.xlf`;
 
   return getTranslationsWithSystemJs(translationFile)
     .then( (translations: string ) => [
@@ -30,10 +38,3 @@ declare var System: any;
 function getTranslationsWithSystemJs(file: string) {
   return System.import(file + '!text'); // relies on text plugin
 }
-
-
-/*
-Copyright 2016 Google Inc. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at http://angular.io/license
-*/

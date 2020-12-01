@@ -1,7 +1,5 @@
-//import '@angular/common/locales/en-GB';
 import { BrowserModule, Meta } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { VirtualScrollerModule } from 'ngx-virtual-scroller';
+import { LOCALE_ID, NgModule, TRANSLATIONS, TRANSLATIONS_FORMAT } from '@angular/core';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { APP_BASE_HREF } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
@@ -24,7 +22,6 @@ import { ProductItemComponent } from './modules/product/item/item.component';
 import { ListingCategoriesComponent } from './modules/listing/categories/categories.component';
 import { ListingManufacturersComponent } from './modules/listing/manufacturers/manufacturers.component';
 import { ProductManufacturerComponent } from './modules/product/manufacturer/manufacturer.component';
-import { LayoutPopupMobileManuComponent } from './layout/popup-mobile-manu/popup-mobile-manu.component';
 import { LayoutSideNavComponent } from './layout/side-nav/side-nav.component';
 import { PageContactComponent } from './modules/pages/contact/contact.component';
 import { PagePageComponent } from './modules/pages/page/page.component';
@@ -39,11 +36,13 @@ import { InventorySectionComponent } from './layout/main-section/inventory-secti
 import { BlogSectionComponent } from './layout/main-section/blog-section/blog-section.component';
 import { TestimonialsSectionComponent } from './layout/main-section/testimonials-section/testimonials-section.component';
 import { ContactSectionComponent } from './layout/main-section/contact-section/contact-section.component';
+import { getCurrentLocale, getTranslationProviders } from './i18n-providers';
+
+var vLocale = getCurrentLocale();
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutPopupMobileManuComponent,
     IndexComponent,
     LayoutHeaderComponent,
     LayoutFooterComponent,
@@ -84,24 +83,26 @@ import { ContactSectionComponent } from './layout/main-section/contact-section/c
   exports: [
     LayoutHeaderComponent,
     LayoutFooterComponent,
-    LayoutPopupMobileManuComponent,
     LayoutSideNavComponent
   ],
   providers: [
     Meta,
     { provide: APP_BASE_HREF, useValue: '/' },
     { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },
-    WindowRef
+    WindowRef,
+
+
+    { provide: TRANSLATIONS_FORMAT, useValue: 'xlf' },
+    { provide: LOCALE_ID, useValue: vLocale }
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule {
   public language: any;
   public LocaleName: string;
   constructor(private winRef: WindowRef) {
-  
-  winRef.nativeWindow.document.locale='ka';
-  this.LocaleName = winRef.nativeWindow.document.locale
-  console.log('[CONSTRUCTOR CALLED]', winRef.nativeWindow.document.locale);
+    this.winRef.nativeWindow.document.locale=vLocale;
+    this.LocaleName = vLocale;
   }
  }

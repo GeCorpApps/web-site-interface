@@ -2,56 +2,25 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="IndexSlogan" datatype="html">
-        <source>ჩვენთან მარტივია T</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/modules/index/index/index.component.html</context>
-          <context context-type="linenumber">13</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="NavigationHome" datatype="html">
-        <source>მთავარი T</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/layout/header/header.component.html</context>
-          <context context-type="linenumber">50</context>
-        </context-group>
+        <source>მთავარი</source>
+        <target>Home</target>
       </trans-unit>
       <trans-unit id="NavigationServices" datatype="html">
-        <source>მომსსახურება T</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/layout/header/header.component.html</context>
-          <context context-type="linenumber">51</context>
-        </context-group>
+        <source>სერვისები</source>
+        <target>Services</target>
       </trans-unit>
       <trans-unit id="NavigationAbout" datatype="html">
-        <source>ჩვენს შესახებ T</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/layout/header/header.component.html</context>
-          <context context-type="linenumber">52</context>
-        </context-group>
+        <source></source>
+        <target>About Us</target>
+      </trans-unit>
+      <trans-unit id="NavigationPortfolio" datatype="html">
+        <source>პორტფოლიო</source>
+        <target>Portfolio</target>
       </trans-unit>
       <trans-unit id="NavigationContact" datatype="html">
-        <source>კონტაქტი T</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/layout/header/header.component.html</context>
-          <context context-type="linenumber">53</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ServicesPageTitle" datatype="html">
-        <source>სერვისები თარგმანიდან</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/modules/pages/services/services.component.html</context>
-          <context context-type="linenumber">8</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="ServicesReadMore" datatype="html">
-        <source>
-          <i class="fas fa-angle-right"></i>
-        </source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/modules/pages/services/services.component.html</context>
-          <context context-type="linenumber">28</context>
-        </context-group>
+        <source>კონტაქტი</source>
+        <target>Contact Us</target>
       </trans-unit>
     </body>
   </file>

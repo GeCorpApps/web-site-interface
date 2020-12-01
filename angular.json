@@ -4,6 +4,16 @@
   "newProjectRoot": "projects",
   "projects": {
     "app": {
+      "i18n": {
+        "sourceLocale": "ka",
+        "locales": {
+          "en": {
+            "translation": "src/locale/en.xlf",
+            "baseHref": "" 
+          }
+        }
+      },
+
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +27,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "../app",
+            "localize": true,
+            "aot": true,
+            "outputPath": "./app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -33,32 +45,6 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js"
             ]
-          },
-          "configurations": {
-            "production": {
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "aot": true,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "2mb",
-                  "maximumError": "5mb"
-                }
-              ]
-            }
           }
         },
         "serve": {
