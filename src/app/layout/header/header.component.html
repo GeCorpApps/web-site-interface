@@ -1,217 +1,79 @@
-<!-- Start Header -->
-<header class="ax-header haeder-default  light-logo-version header-transparent axil-header-sticky">
-    <div class="header-wrapper">
-        <div class="container-fluid plr--100 plr_lg--30 plr_md--30 plr_sm--10">
-            <div class="row align-items-center">
-                <div class="col-lg-3 col-xl-3 col-md-6 col-sm-6 col-8 header-left">
-                    <div class="logo">
-                        <a href="/#/">
-                            <img src="assets/images/logo/AutoR_300.png" />
-                            <!-- <svg width="281px" height="60px" viewBox="0 0 281 60" version="1.1">
-                                <title>Logo</title>
-                                <desc>Created with Sketch.</desc>
-                                <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                    <g transform="translate(-315.000000, -40.000000)">
-                                        <g>
-                                            <g id="logo" transform="translate(315.000000, 40.000000)">
-                                                <text id="Keystroke-Startup-la" font-family="DMSans-Bold, DM Sans"
-                                                    font-size="20" font-weight="bold" fill="#000248">
-                                                    <tspan x="75" y="24">Keystroke</tspan>
-                                                    <tspan x="175.14" y="24.5001221"
-                                                        font-family="DMSans-Regular, DM Sans" font-weight="normal">
-                                                    </tspan>
-                                                    <tspan x="76.16" y="49.5001221"
-                                                        font-family="DMSans-Regular, DM Sans" font-size="18"
-                                                        font-weight="normal">Startup template</tspan>
-                                                </text>
-                                                <g id="Favicon">
-                                                    <rect id="Base" fill="#702FFF" x="0" y="0" width="60" height="60"
-                                                        rx="14"></rect>
-                                                    <g id="Group-3" transform="translate(15.000000, 11.000000)">
-                                                        <circle id="icon-oval-lg" class="icon-oval-lg" stroke="#FFFFFF"
-                                                            stroke-width="7" cx="15" cy="15" r="11.5"></circle>
-                                                        <circle id="icon-oval-sm" class="icon-oval-sm" fill="#FFFFFF"
-                                                            cx="4" cy="34" r="4"></circle>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </g>
-                            </svg> -->
-                        </a>
-                    </div>
+<!-- Main Header-->
+<header class="main-header">
+    	
+    <!-- Main Box -->
+    <div class="main-box">
+        <div class="auto-container">
+            <div class="outer-container clearfix">
+                <!--Logo Box-->
+                <div class="logo-box">
+                    <div class="logo"><a href="index.html"><img src="images/logo.png" alt=""></a></div>
                 </div>
-                <div class="col-lg-7 col-xl-6 d-none d-lg-block">
-                    <div class="mainmenu-wrapepr justify-content-center">
-                        <!-- Start Mainmanu Nav -->
-                        <nav class="mainmenu-nav d-none d-lg-block">
-                            <ul class="mainmenu">
-                                <li><a href="#/" i18n="@@NavigationHome">მთავარი</a></li>
-                                <li><a href="#/services" i18n="@@NavigationServices">მომსსახურება</a></li>
-                                <li><a href="#/about" i18n="@@NavigationAbout">ჩვენს შესახებ</a></li>
-                                <li><a href="#/contact" i18n="@@NavigationContact">კონტაქტი</a></li>
-                                <li>
-                                    <div class="btn-group" role="group" aria-label="...">
-                                        <div class="btn-group" role="group">
-                                          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Select Language
-                                            <span class="caret"></span>
-                                          </button>
-                                          <ul class="dropdown-menu">
-                                            <li>
-                                              <a href="#" (click)="setLanguage('EN')" >English</a>
-                                            </li>
-                                            <li>
-                                              <a href="#" (click)="setLanguage('FR')">French</a>
-                                            </li>
-                                          </ul>
-                                        </div>
-                                      </div>
-                                      <h1 i18n="User welcome|An introduction header for this sample">Hello i18n!</h1>
+                
+                <!--Nav Outer-->
+                <div class="nav-outer clearfix">
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                    
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->    	
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        
+                        <div class="navbar-collapse collapse scroll-nav clearfix">
+                            <ul class="navigation clearfix">
+                                <li class="dropdown current"><a href="#banner">Home</a>
+                                    <ul>
+                                        <li><a href="index.html">Home Version One</a></li>
+                                        <li><a href="index-2.html">Home Version Two</a></li>
+                                        <li><a href="index-3.html">Home Version Three</a></li>
+                                        <li><a href="index-4.html">Home Version Four</a></li>
+                                    </ul>
                                 </li>
-                            </ul>
-                        </nav>
-                        <!-- End Mainmanu Nav -->
+                                <li class="dropdown"><a href="#">Extra Pages</a>
+                                    <ul>
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li><a href="price.html">Pricing</a></li>
+                                    <li class="dropdown"><a href="#">Services</a>
+                                        <ul>
+                                            <li><a href="services.html">All Services</a></li>
+                                            <li><a href="service-detail.html">Service Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown"><a href="#">Blog</a>
+                                        <ul>
+                                            <li><a href="blog.html">Blog Page</a></li>
+                                            <li><a href="blog-single.html">Blog Post Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#products">Products</a></li>
+                                <li><a href="#features">Feature</a></li>
+                                <li><a href="#inventory">Inventory</a></li>
+                                <li><a href="#contact">Contact Us</a></li>                                      
+                             </ul>
+                        </div>
+                        
+                    </nav>
+                    <!-- Main Menu End-->
+                    
+                    <!--Other Links-->
+                    <div class="other-links">
+                        <a href="contact.html" class="theme-btn btn-style-one">Get Quote</a>
                     </div>
+                    
                 </div>
-                <div class="col-lg-2 col-xl-3 col-md-6 col-sm-6 col-4 header-right">
-                    <!-- Start Header Extra  -->
-                    <div class="axil-header-extra d-flex align-items-center justify-content-end">
-                        <!-- Start Search Area -->
-                        <div class="ax-search-area ml--20">
-                            <a class="search-trigger" href="#"><i class="fas fa-search"></i></a>
-                        </div>
-                        <!-- End Search Area -->
-
-                        <!-- Start Hamburger -->
-                        <div class="ax-hamburger ml--40 ml_lg--20 d-none d-lg-block">
-                            <a class="axil-menuToggle ax-hamburger-trigger" id="side-nav-toggler" href="#">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </a>
-                        </div>
-                        <!-- End Hamburger -->
-
-                        <!-- Start Menu Bar  -->
-                        <div class="ax-menubar popup-navigation-activation d-block d-lg-none ml_sm--20 ml_md--20">
-                            <div>
-                                <i></i>
-                            </div>
-                        </div>
-                        <!-- End Menu Bar  -->
-
-                        <!-- Start Search Area  -->
-                        <div class="axil-search-area">
-                            <form action="#" class="axil-searchbar">
-                                <div class="search-field">
-                                    <input type="text" placeholder="Search Here...">
-                                    <button class="navbar-search-btn" type="button"><i
-                                            class="fal fa-search"></i></button>
-                                </div>
-                                <a href="#" class="navbar-search-close"><i class="fal fa-times"></i></a>
-                            </form>
-                        </div>
-                        <!-- End Search Area  -->
-                    </div>
-                    <!-- End Header Extra  -->
-
-                </div>
-            </div>
+                <!--Nav Outer End-->
+                
+            </div>    
         </div>
     </div>
+
 </header>
-<!-- End Header -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Start Sidebar Area  -->
-<div class="side-nav">
-    <div class="side-nav-inner">
-        <!-- Start Search Bar  -->
-        <form action="#" class="side-nav-search-form">
-            <div class="form-group search-field">
-                <input type="text" class="search-field" name="search-field" placeholder="Search...">
-                <button class="side-nav-search-btn"><i class="fas fa-search"></i></button>
-            </div>
-        </form>
-        <!-- End Search Bar  -->
-
-        <!-- Start Side Content  -->
-        <div class="side-nav-content">
-            <div class="row ">
-                <!-- Start Left Bar  -->
-                <div class="col-lg-5 col-xl-6 col-12">
-                    <ul class="main-navigation">
-                        <li><a href="home-01.html">Home One</a></li>
-                        <li><a href="home-02.html">Home Two</a></li>
-                        <li><a href="home-03.html">Home Three</a></li>
-                        <li><a href="home-04.html">Home Four</a></li>
-                        <li><a href="home-05.html">Home Five</a></li>
-                    </ul>
-                </div>
-                <!-- End Left Bar  -->
-
-                <!-- Start Right Bar  -->
-                <div class="col-lg-7 col-xl-6 col-12">
-                    <div class="axil-contact-info-inner">
-
-                        <!-- Start Single Address  -->
-                        <div class="axil-contact-info">
-                            <address class="address">
-                                <span class="title">Contact Information</span>
-                                <p>Theodore Lowe, Ap #867-859 <br> Sit Rd, Azusa New York</p>
-                            </address>
-                            <address class="address">
-                                <span class="title">We're Available 24/ 7. Call Now.</span>
-                                <p><a class="tel" href="tel:8884562790"><i class="fas fa-phone"></i>(888)
-                                        456-2790</a></p>
-                                <p><a class="tel" href="tel:12125553333"><i class="fas fa-fax"></i>(121)
-                                        255-53333</a></p>
-                            </address>
-                        </div>
-                        <!-- End Single Address  -->
-
-                        <!-- Start Single Address  -->
-                        <div class="axil-contact-info">
-                            <h5 class="title">Find us here</h5>
-                            <div class="contact-social-share d-flex align-items-center">
-                                <ul class="social-share style-rounded">
-                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                </ul>
-                            </div>
-
-                        </div>
-                        <!-- End Single Address  -->
-                    </div>
-                </div>
-                <!-- End Right Bar  -->
-            </div>
-        </div>
-        <!-- End Side Content  -->
-        <!-- End of .side-nav-inner -->
-        <div class="close-sidenav" id="close-sidenav">
-            <button class="close-button"><i class="fal fa-times"></i></button>
-        </div>
-    </div>
-</div>
-<!-- End Sidebar Area  -->
+<!--End Main Header -->

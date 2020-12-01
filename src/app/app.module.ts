@@ -32,6 +32,13 @@ import { IndexPartnersComponent } from './modules/index/partners/partners.compon
 import { PageServicesComponent } from './modules/pages/services/services.component';
 import { ServiceComponent } from './modules/pages/service/service.component';
 import { WindowRef } from './WindowRef';
+import { MainSectionMainBannerComponent } from './layout/main-section/main-banner/main-banner.component';
+import { ProductsSectionComponent } from './layout/main-section/products-section/products-section.component';
+import { FeaturesSectionComponent } from './layout/main-section/features-section/features-section.component';
+import { InventorySectionComponent } from './layout/main-section/inventory-section/inventory-section.component';
+import { BlogSectionComponent } from './layout/main-section/blog-section/blog-section.component';
+import { TestimonialsSectionComponent } from './layout/main-section/testimonials-section/testimonials-section.component';
+import { ContactSectionComponent } from './layout/main-section/contact-section/contact-section.component';
 
 @NgModule({
   declarations: [
@@ -58,15 +65,21 @@ import { WindowRef } from './WindowRef';
     PagePageComponent,
     IndexPartnersComponent,
     PageServicesComponent,
-    ServiceComponent
+    ServiceComponent,
+    MainSectionMainBannerComponent,
+    ProductsSectionComponent,
+    FeaturesSectionComponent,
+    InventorySectionComponent,
+    BlogSectionComponent,
+    TestimonialsSectionComponent,
+    ContactSectionComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    FormsModule,
-    VirtualScrollerModule
+    FormsModule
   ],
   exports: [
     LayoutHeaderComponent,

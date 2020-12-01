@@ -17,25 +17,25 @@ export class IndexComponent implements OnInit {
   constructor(private titleService: Title, private metaService: Meta, private RService: RestService) { }
   
   ngOnInit() {
-    this.RService.get("").subscribe(
-      (response) => {
-        var preloader = localStorage.getItem("preloader");
-        if(preloader){
-          if(Array(preloader).length < Array(response.result.preloader).length){
-              localStorage.removeItem("preloader");              
-          }
-        }
-        localStorage.setItem("preloader", JSON.stringify(response.result.preloader));
-      }
-    );
-    this.titleService.setTitle(this.metaTitle);
-    this.metaService.addTags([
-      {name: 'keywords', content: 'AutoR,ავტორ,კომპანია ავტორ,ავტო მომსახურება,ავტო სერვისი,ავტომობილის შეკეთება,გამოძახებით'},
-      {name: 'description', content: 'კომპანია AutoR გთავაზობთ ავტომობილის შეკეთებას გამოძახებით, მოვალთ წავიყვანთ და გავაკეთებთ, დაგვიკავშირდით - ჩვენთან მარტივია'},
-      {name: 'robots', content: 'index, follow'},
-      {name: 'theme-color', content: '#b4fff5'},
-      {name: 'msapplication-TileColor', content: '#b4fff5'}
-    ]);    
+    // this.RService.get("").subscribe(
+    //   (response) => {
+    //     var preloader = localStorage.getItem("preloader");
+    //     if(preloader){
+    //       if(Array(preloader).length < Array(response.result.preloader).length){
+    //           localStorage.removeItem("preloader");              
+    //       }
+    //     }
+    //     localStorage.setItem("preloader", JSON.stringify(response.result.preloader));
+    //   }
+    // );
+    // this.titleService.setTitle(this.metaTitle);
+    // this.metaService.addTags([
+    //   {name: 'keywords', content: 'AutoR,ავტორ,კომპანია ავტორ,ავტო მომსახურება,ავტო სერვისი,ავტომობილის შეკეთება,გამოძახებით'},
+    //   {name: 'description', content: 'კომპანია AutoR გთავაზობთ ავტომობილის შეკეთებას გამოძახებით, მოვალთ წავიყვანთ და გავაკეთებთ, დაგვიკავშირდით - ჩვენთან მარტივია'},
+    //   {name: 'robots', content: 'index, follow'},
+    //   {name: 'theme-color', content: '#b4fff5'},
+    //   {name: 'msapplication-TileColor', content: '#b4fff5'}
+    // ]);    
   }   
 
   public makeOrder(){
