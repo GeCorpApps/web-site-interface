@@ -8,7 +8,7 @@ import { RestService } from 'src/app/datasource/rest.service';
 })
 export class PageServicesComponent implements OnInit {
 
-  private method = "service";
+  private dataFileUri = "assets/data/services.json";
   public list: any;
 
   constructor(private RService: RestService) { }
@@ -18,18 +18,14 @@ export class PageServicesComponent implements OnInit {
   }
 
   private getServiceData() {
-      this.RService.get(this.method).subscribe(
-        (resp) => {
-          if (resp.status === true) {
-            this.list = resp.result;
-          } else {
-            console.error(resp);
-          }
-        },
-        (error: any) => {
-          console.log(error);
-        }
-      )
+    this.RService.get(this.dataFileUri).subscribe(
+      (response) => {
+        this.list = response;
+      },
+      (error: any) => {
+        console.log(error);
+      }
+    )
   }
 
 }

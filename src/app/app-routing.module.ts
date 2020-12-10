@@ -6,6 +6,7 @@ import { PagenotfoundComponent } from './modules/httpstatuses/pagenotfound/pagen
 import { PageContactComponent } from './modules/pages/contact/contact.component';
 import { PagePageComponent } from './modules/pages/page/page.component';
 import { PageServicesComponent } from './modules/pages/services/services.component';
+import { PageServiceComponent } from './modules/pages/service/service.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,10 @@ const routes: Routes = [
   {
     path: 'services',
     component: PageServicesComponent
+  },
+  {
+    path: 'service/:id',
+    component: PageServiceComponent
   }, 
   {
     path: 'map',

@@ -9,7 +9,7 @@
         "locales": {
           "en": {
             "translation": "src/locale/en.xlf",
-            "baseHref": "" 
+            "baseHref": ""
           }
         }
       },

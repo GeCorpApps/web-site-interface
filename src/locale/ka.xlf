@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="ka-KA" datatype="plaintext" original="ng2.template">
+  <file source-language="ka" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="NavigationHome" datatype="html">
-        <source>მთავარი</source>
-        <target state="new">მთავარი</target>
+        <source>Home</source>
+        <target>მთავარი</target>
       </trans-unit>
       <trans-unit id="NavigationServices" datatype="html">
-        <source>სერვისები</source>
-        <target state="new">სერვისები</target>
+        <source>Services</source>
+        <target>სერვისები</target>
       </trans-unit>
       <trans-unit id="NavigationAbout" datatype="html">
-        <source>ჩვენს შესახებ</source>
-        <target state="new">ჩვენს შესახებ</target>
+        <source>About Us</source>
+        <target>ჩვენს შესახებ</target>
       </trans-unit>
       <trans-unit id="NavigationPortfolio" datatype="html">
-        <source>პორტფოლიო</source>
-        <target state="new">პორტფოლიო</target>
+        <source>Portfolio</source>
+        <target>პორტფოლიო</target>
       </trans-unit>
       <trans-unit id="NavigationContact" datatype="html">
-        <source>კონტაქტი</source>
-        <target state="new">კონტაქტი</target>
+        <source>Contact Us</source>
+        <target>კონტაქტი</target>
+      </trans-unit>
+      <trans-unit id="ServicesReadMore" datatype="html">
+        <source>Read More...</source>
+        <target>იხილეთ ვრცლად...</target>
       </trans-unit>
     </body>
   </file>

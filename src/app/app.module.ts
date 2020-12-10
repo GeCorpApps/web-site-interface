@@ -1,5 +1,5 @@
 import { BrowserModule, Meta } from '@angular/platform-browser';
-import { LOCALE_ID, NgModule, TRANSLATIONS, TRANSLATIONS_FORMAT } from '@angular/core';
+import { LOCALE_ID, NgModule, TRANSLATIONS_FORMAT } from '@angular/core';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { APP_BASE_HREF } from '@angular/common';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
@@ -17,17 +17,14 @@ import { BadrequestComponent } from './modules/httpstatuses/badrequest/badreques
 import { LoaderInterceptor } from './datasource/services/loader/loader.interceptors';
 import { LoaderComponent } from './layout/loader/loader.component';
 import { BoolPipe } from './pipes/bool.pipe';
-import { ProductListComponent } from './modules/product/list/list.component';
-import { ProductItemComponent } from './modules/product/item/item.component';
 import { ListingCategoriesComponent } from './modules/listing/categories/categories.component';
 import { ListingManufacturersComponent } from './modules/listing/manufacturers/manufacturers.component';
-import { ProductManufacturerComponent } from './modules/product/manufacturer/manufacturer.component';
 import { LayoutSideNavComponent } from './layout/side-nav/side-nav.component';
 import { PageContactComponent } from './modules/pages/contact/contact.component';
 import { PagePageComponent } from './modules/pages/page/page.component';
 import { IndexPartnersComponent } from './modules/index/partners/partners.component';
 import { PageServicesComponent } from './modules/pages/services/services.component';
-import { ServiceComponent } from './modules/pages/service/service.component';
+import { PageServiceComponent } from './modules/pages/service/service.component';
 import { WindowRef } from './WindowRef';
 import { MainSectionMainBannerComponent } from './layout/main-section/main-banner/main-banner.component';
 import { ProductsSectionComponent } from './layout/main-section/products-section/products-section.component';
@@ -36,7 +33,7 @@ import { InventorySectionComponent } from './layout/main-section/inventory-secti
 import { BlogSectionComponent } from './layout/main-section/blog-section/blog-section.component';
 import { TestimonialsSectionComponent } from './layout/main-section/testimonials-section/testimonials-section.component';
 import { ContactSectionComponent } from './layout/main-section/contact-section/contact-section.component';
-import { getCurrentLocale, getTranslationProviders } from './i18n-providers';
+import { getCurrentLocale } from './i18n-providers';
 
 var vLocale = getCurrentLocale();
 
@@ -54,17 +51,14 @@ var vLocale = getCurrentLocale();
     BadrequestComponent,
     LoaderComponent,
     BoolPipe,
-    ProductListComponent,
-    ProductItemComponent,
     ListingCategoriesComponent,
     ListingManufacturersComponent,
-    ProductManufacturerComponent,
     LayoutSideNavComponent,
     PageContactComponent,
     PagePageComponent,
     IndexPartnersComponent,
     PageServicesComponent,
-    ServiceComponent,
+    PageServiceComponent,
     MainSectionMainBannerComponent,
     ProductsSectionComponent,
     FeaturesSectionComponent,

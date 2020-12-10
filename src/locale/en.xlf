@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
       <trans-unit id="NavigationHome" datatype="html">
         <source>მთავარი</source>
@@ -21,6 +21,10 @@
       <trans-unit id="NavigationContact" datatype="html">
         <source>კონტაქტი</source>
         <target>Contact Us</target>
+      </trans-unit>
+      <trans-unit id="ServicesReadMore" datatype="html">
+        <source>იხილეთ ვრცლად...</source>
+        <target>Read More...</target>
       </trans-unit>
     </body>
   </file>

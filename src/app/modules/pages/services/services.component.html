@@ -1,42 +1,176 @@
-<main class="page-wrappper">
-    <!-- Start Navigation Content  -->
-    <div class="section axil-service-area bg-color-lightest ax-section-gap">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title text-left">
-                        <span class="sub-title extra04-color wow" data-splitting i18n="@@ServicesServices">სერვისები</span>
-                        <h2 class="title wow" data-splitting i18n="@@ServicesDevelopment">Development</h2>
-                    </div>
+<!--Page Title-->
+<section class="page-title">
+    <span class="left-curve"></span>
+    <span class="right-curve"></span>
+    <div class="auto-container">
+        <h1>Our Services</h1>
+        <ul class="page-breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li>Services</li>
+        </ul>
+    </div>
+</section>
+<!--End Page Title-->
+
+<!--Price Section-->
+<section class="services-page-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            
+            <!--Service Style Three-->
+            <div class="service-style-three col-md-4 col-sm-6 col-xs-12" *ngFor="let item of this.list;">
+                <div class="inner-box">
+                    <div class="icon"><figure class="image"><img src="{{item.photo}}" alt="{{item.name}}"></figure></div>
+                    <h3><a href="#/service/{{item.id}}" i18n="@@ServicesReadMore">იხილეთ ვრცლად...</a></h3>
+                    <div class="text">{{item.description}}</div>
                 </div>
             </div>
-            <!-- Start Service Wrapper  -->
-            <div class="row">
-                <!-- Start Single Service  -->
-                <div class="col-lg-4 col-md-6 col-sm-6 col-12" *ngFor="let item of this.list;">
-                    <div class="axil-service text-left axil-control paralax-image active">
-                        <div class="inner">
-                            <div class="icon">
-                                <div class="icon-inner">
-                                    <img src="assets/images/icons/layer.svg" alt="Icon Images">
-                                    <div class="image-2"><img src="{{item.photo}}" alt="{{item.name}}"></div>
-                                </div>
-                            </div>
-                            <div class="content">
-                                <h4 class="title"><a href="single-service.html">{{item.name}}</a></h4>
-                                <p>{{item.short_text}}</p>
-                                <a class="axil-button" data-hover="Learn More" href="#/service/{{item.id}}" i18n="@@ServicesReadMore">
-                                    <i class="fas fa-angle-right"></i>
-                                </a>
+            
+        </div>
+    </div>
+</section>
+<!--End Price Section-->
+
+<!--Overview Section-->
+<section class="review-section" id="overview">
+    <div class="auto-container">
+        
+        <!--Heading-->
+        <div class="sec-title-two centered">
+            <h2>Take a quick overview</h2>
+            <div class="desc-text">The standard chunk of Lorem Ipsum useds since the 1500s is reproduced below form those</div>
+        </div>
+        
+        <div class="review-tabs tabs-box">
+            <!--Buttons-->
+            <div class="buttons-box">
+                <ul class="tab-buttons clearfix">
+                    <li class="tab-btn active-btn" data-tab="#tab-one">Modern Design</li>
+                    <li class="tab-btn" data-tab="#tab-two">Friendly use</li>
+                    <li class="tab-btn" data-tab="#tab-three">Face ID</li>
+                    <li class="tab-btn" data-tab="#tab-four">Wireless Charging</li>
+                    <li class="tab-btn" data-tab="#tab-five">New Sensor</li>
+                </ul>
+            </div>
+            
+            <!--Tabs Content-->
+            <div class="tabs-content">
+                <!--Tab / Active tab-->
+                <div class="tab active-tab" id="tab-one">
+                    <div class="row clearfix">
+                        <!--Image Column-->
+                        <div class="image-column col-md-4 col-sm-4 col-xs-12">
+                            <figure class="image"><img src="assets/theme/images/resource/featured-image-11.png" alt=""></figure>
+                        </div>
+                        <!--Text Column-->
+                        <div class="text-column col-md-8 col-sm-8 col-xs-12">
+                            <div class="inner">
+                                <div class="icon"><img src="assets/theme/images/icons/icon-22.png" alt=""></div>
+                                <h3>Modern Design</h3>
+                                <div class="text">There are many variations of passages of Lorem Ipsume available, but the majority. Many museu are transforming thanks to echnology. They are adding interactivity and magic to the visitorer experience. Estimote Beacons have helped the Guggenheim in New York to be at the forefront of this process. The club uses Estimote Beacons to transform the in-stadium experience for its guests.</div>
+                                <div class="more-link-one"><a href="#">See more <span class="icon ti-arrow-circle-right"></span></a></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- End Single Service  -->
-
+                
+                <!--Tab-->
+                <div class="tab" id="tab-two">
+                    <div class="row clearfix">
+                        <!--Image Column-->
+                        <div class="image-column col-md-4 col-sm-4 col-xs-12">
+                            <figure class="image"><img src="assets/theme/images/resource/featured-image-11.png" alt=""></figure>
+                        </div>
+                        <!--Text Column-->
+                        <div class="text-column col-md-8 col-sm-8 col-xs-12">
+                            <div class="inner">
+                                <div class="icon"><img src="assets/theme/images/icons/icon-22.png" alt=""></div>
+                                <h3>Friendly use</h3>
+                                <div class="text">There are many variations of passages of Lorem Ipsume available, but the majority. Many museu are transforming thanks to echnology. They are adding interactivity and magic to the visitorer experience. Estimote Beacons have helped the Guggenheim in New York to be at the forefront of this process. The club uses Estimote Beacons to transform the in-stadium experience for its guests.</div>
+                                <div class="more-link-one"><a href="#">See more <span class="icon ti-arrow-circle-right"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Tab -->
+                <div class="tab" id="tab-three">
+                    <div class="row clearfix">
+                        <!--Image Column-->
+                        <div class="image-column col-md-4 col-sm-4 col-xs-12">
+                            <figure class="image"><img src="assets/theme/images/resource/featured-image-11.png" alt=""></figure>
+                        </div>
+                        <!--Text Column-->
+                        <div class="text-column col-md-8 col-sm-8 col-xs-12">
+                            <div class="inner">
+                                <div class="icon"><img src="assets/theme/images/icons/icon-22.png" alt=""></div>
+                                <h3>Face ID</h3>
+                                <div class="text">There are many variations of passages of Lorem Ipsume available, but the majority. Many museu are transforming thanks to echnology. They are adding interactivity and magic to the visitorer experience. Estimote Beacons have helped the Guggenheim in New York to be at the forefront of this process. The club uses Estimote Beacons to transform the in-stadium experience for its guests.</div>
+                                <div class="more-link-one"><a href="#">See more <span class="icon ti-arrow-circle-right"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Tab -->
+                <div class="tab" id="tab-four">
+                    <div class="row clearfix">
+                        <!--Image Column-->
+                        <div class="image-column col-md-4 col-sm-4 col-xs-12">
+                            <figure class="image"><img src="assets/theme/images/resource/featured-image-11.png" alt=""></figure>
+                        </div>
+                        <!--Text Column-->
+                        <div class="text-column col-md-8 col-sm-8 col-xs-12">
+                            <div class="inner">
+                                <div class="icon"><img src="assets/theme/images/icons/icon-22.png" alt=""></div>
+                                <h3>Wireless Charging</h3>
+                                <div class="text">There are many variations of passages of Lorem Ipsume available, but the majority. Many museu are transforming thanks to echnology. They are adding interactivity and magic to the visitorer experience. Estimote Beacons have helped the Guggenheim in New York to be at the forefront of this process. The club uses Estimote Beacons to transform the in-stadium experience for its guests.</div>
+                                <div class="more-link-one"><a href="#">See more <span class="icon ti-arrow-circle-right"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Tab -->
+                <div class="tab" id="tab-five">
+                    <div class="row clearfix">
+                        <!--Image Column-->
+                        <div class="image-column col-md-4 col-sm-4 col-xs-12">
+                            <figure class="image"><img src="assets/theme/images/resource/featured-image-11.png" alt=""></figure>
+                        </div>
+                        <!--Text Column-->
+                        <div class="text-column col-md-8 col-sm-8 col-xs-12">
+                            <div class="inner">
+                                <div class="icon"><img src="assets/theme/images/icons/icon-22.png" alt=""></div>
+                                <h3>New Sensor</h3>
+                                <div class="text">There are many variations of passages of Lorem Ipsume available, but the majority. Many museu are transforming thanks to echnology. They are adding interactivity and magic to the visitorer experience. Estimote Beacons have helped the Guggenheim in New York to be at the forefront of this process. The club uses Estimote Beacons to transform the in-stadium experience for its guests.</div>
+                                <div class="more-link-one"><a href="#">See more <span class="icon ti-arrow-circle-right"></span></a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            <!-- End Service Wrapper  -->
         </div>
+        
     </div>
-    <!-- End Navigation Content  -->
-</main>
+</section>
+
+<!--Get App Section-->
+<section class="get-app-section alternate">
+    <div class="auto-container">
+        <!--Heading-->
+        <div class="sec-title-two centered">
+            <h2>Get The App</h2>
+            <div class="desc-text">Grow your traffic and draw customers to your business We couldn't put it better than our users.</div>
+        </div>
+        
+        <div class="links-outer">
+            <ul class="get-app-links clearfix">
+                <li><a href="#" class="link-box"><div class="icon-box"><span class="icon"><img src="assets/theme/images/icons/apple-icon.png" alt=""></span></div><span class="title">App Store</span><span class="text">Available on</span></a></li>
+                <li><a href="#" class="link-box"><div class="icon-box"><span class="icon"><img src="assets/theme/images/icons/android-icon.png" alt=""></span></div><span class="title">Google Play</span><span class="text">Available on</span></a></li>
+            </ul>
+        </div>
+        
+    </div>
+</section>

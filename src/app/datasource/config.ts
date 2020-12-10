@@ -6,14 +6,13 @@ export class Config {
   private env: string; // dev, prod
   private serviceBaseURL = {
     dev: 'https://127.0.0.1:8000/api/',
-
-    prod: 'https://autor.ge/api/'
+    prod: '' //https://ge-corp.com/
   };
 
   private publicBaseURL = {
     dev: 'https://127.0.0.1:8000/',
 
-    prod: 'https://autor.ge/'
+    prod: 'https://ge-corp.com/'
   };
 
   private hrefPrefix = {

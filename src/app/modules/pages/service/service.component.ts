@@ -7,7 +7,7 @@ import { RestService } from 'src/app/datasource/rest.service';
   templateUrl: './service.component.html',
   styleUrls: ['./service.component.scss']
 })
-export class ServiceComponent implements OnInit {
+export class PageServiceComponent implements OnInit {
 
   private method = "service/";
   public service: any;
