@@ -1,4 +1,5 @@
 export interface iPage {
+  id: number,
   title: string;
   content: string;
   meta_description: string;

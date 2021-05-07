@@ -10,8 +10,9 @@ import { iPage } from './iPage';
 })
 export class PagePageComponent implements OnInit {
 
-  private method = "page/";
+  private dataFileUri = "assets/data/services.json";
   public page: iPage = {
+    id: 0,
     title: "",
     content: "",
     meta_description: "",
@@ -27,13 +28,14 @@ export class PagePageComponent implements OnInit {
 
   private getPageData() {
     this.route.data.subscribe((params) => {
-      this.RService.get(this.method + params.id).subscribe(
-        (resp) => {
-          if (resp.status === true) {
-            this.page = resp.result;
-          } else {
-            console.error(resp);
-          }
+      var vID = params.id;
+      this.RService.get(this.dataFileUri).subscribe(
+        (resp:any) => {
+            this.page = resp.pages.filter((data) => {
+              if(data.id == vID){
+                return data;
+              }
+            });
         },
         (error: any) => {
           console.log(error);

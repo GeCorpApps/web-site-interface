@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Web development",
+        "description": "",
+        "photo": "assets/data/img/webdev.png",
+        "page": {
+            "name": "Web development",
+            "content": "Your website should be neat and clean so that your customers find what exactly they are looking for. Adding all the features of your products and services on your website will just confuse your customers. In fact, content, is the only thing that holds your customers on your website for a longer time.            For example, you own a dairy business and offer dairy products to your customers. Now, this type of business needs clear communication on your website. There are some businesses that offer just services, so we need to add proper and relevant information on the website. The customer should have clarity about the product/services and is able to make a decision about whether to buy it or not. Such should be your main objective while designing a website. How acquainted are you with website development terms? Yes, it is a technical part. Even though you make a good website but if you do not configure what is required, it is not going to work. There will be no traffic on your website and your efforts will go in vain. You have to worry now neither about website design nor website development."
+        }
+    },
+    {
+        "id": 2,
+        "name": "Android application development",
+        "description": "",
+        "photo": "assets/data/img/android2.png",
+        "page": {
+            "name": "Android აპლიკაციის შექმნა",
+            "content": "Android აპლიკაციის შექმნა Android აპლიკაციის შექმნა Android აპლიკაციის შექმნა"            
+        }
+    },
+    {
+        "id": 3,
+        "name": "iOS application development",
+        "description": "",
+        "photo": "assets/data/img/ios.png",
+        "page": {
+            "name": "iOS აპლიკაციის შექმნა",
+            "content": "iOS აპლიკაციის შექმნა, iOS აპლიკაციის შექმნა, iOS აპლიკაციის შექმნა"            
+        }
+    },
+    {
+        "id": 4,
+        "name": "E-Commerce development",
+        "description": "ონლაინ შოპინგი ყველა თანამედროვე სტანდარტის გათვალისწინებიტ",
+        "photo": "assets/data/img/e-cpmmerce.png",
+        "page": {
+            "name": "E-Commerce - development",
+            "content": "E-Commerce - ელექტრონული კომერცია, E-Commerce - ელექტრონული კომერცია, E-Commerce - ელექტრონული კომერცია"            
+        }
+    },
+    {
+        "id": 5,
+        "name": "Statistical data modeling",
+        "description": "",
+        "photo": "assets/data/img/statistic.png",
+        "page": {
+            "name": "Statistical data modeling",
+            "content": "At Hitech, we provide data modeling services using a combination of statistical methodologies and machine learning techniques to build analytical models both on big data as well as conventional data. This can involve the design of experiments on sample surveys, the analytics of data as well as development of unique methods to tackle specific characteristics in the data. We identify recurring trends and patterns, build metrics and provide insights that provide value, optimal solutions and cost advantages to your business."
+        }
+    },
+    {
+        "id": 6,
+        "name": "Database analytic and optimization",
+        "description": "",
+        "photo": "assets/data/img/db.png",
+        "page": {
+            "name": "Database analytic and optimization",
+            "content": "მონაცემთა ბაზის ოპტიმიზაცია, მონაცემთა ბაზის ოპტიმიზაცია, მონაცემთა ბაზის ოპტიმიზაცია"            
+        }
+    },
+    {
+        "id": 7,
+        "name": "Visa/Mastercard payment method integration",
+        "description": "",
+        "photo": "assets/data/img/visa.png",
+        "page": {
+            "name": "Visa/Mastercard გადახდის სისტემის ინტეგრაცია",
+            "content": "Visa/Mastercard გადახდის სისტემის ინტეგრაცია, Visa/Mastercard გადახდის სისტემის ინტეგრაცია, Visa/Mastercard გადახდის სისტემის ინტეგრაცია"            
+        }
+    },
+    {
+        "id": 8,
+        "name": "Smart Contracts",
+        "description": "Smart Contracts ბლოკჩეინ ტექნოლოგიის გამოყენებით",
+        "photo": "assets/data/img/blockchain.png",
+        "page": {
+            "name": "Smart Contracts ბლოკჩეინ ტექნოლოგიის გამოყენებით",
+            "content": "Smart Contracts ბლოკჩეინ ტექნოლოგიის გამოყენებით, Smart Contracts ბლოკჩეინ ტექნოლოგიის გამოყენებით, Smart Contracts ბლოკჩეინ ტექნოლოგიის გამოყენებით"            
+        }
+    },
+    {
+        "id": 9,
+        "name": "SEO optimization",
+        "description": "SEO optimization",
+        "photo": "assets/data/img/seo.png",
+        "page": {
+            "name": "SEO optimization",
+            "content": "Now you do not have to worry about all the above questions. There are simple solutions available out there to help your business grow and expand online. Well, let us help you see what that is exactly. Let’s say a customer is typing at a cafe nearby me in Google search. If you own a cafe business and have an online presence with all the relevant information. Your cafe would show up in the search box of the customer. He/She would be able to find your cafe just by putting in a few words in a search engine like Google. Now just imagine if you do not have a website or online presence, you would have lost one customer and your business cannot bear this loss. It is nothing but, bringing your business online. It does not matter whether you are providing services or just selling some products. It is a crucial factor to establish your business online. Whether you are a small business or a well-settled business, your online presence matters a lot."
+        }
+    }
+]

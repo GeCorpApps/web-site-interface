@@ -40,8 +40,13 @@ export class RestService {
     );
   }
 
-  public get(pSegment: string, pParams: any = false): Observable<any> {
-    return this.http.get(this.lconfig.baseURL + pSegment);
+  public get(pSegment: string, pHttpRequest:boolean = false): Observable<any> {
+    if(pHttpRequest){
+      return this.http.get(this.lconfig.baseURL + pSegment);
+    }else{
+      return this.http.get(pSegment);
+    }
+    
   }
 
   public post(pSegment: string, pParams: FormData = new FormData(), pDeprecatedOption: any = {}): Observable<any> {

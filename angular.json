@@ -29,7 +29,7 @@
           "options": {
             "localize": true,
             "aot": true,
-            "outputPath": "./app",
+            "outputPath": "./../app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",

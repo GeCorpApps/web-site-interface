@@ -3,10 +3,15 @@ import { Injectable } from "@angular/core";
 
 @Injectable()
 export class Config {
+  public meta = {
+    robots: "",
+    themeColor: "",
+    msapplicationTileColor: ""
+  };
   private env: string; // dev, prod
   private serviceBaseURL = {
     dev: 'https://127.0.0.1:8000/api/',
-    prod: '' //https://ge-corp.com/
+    prod: 'https://ge-corp.com/api/'
   };
 
   private publicBaseURL = {

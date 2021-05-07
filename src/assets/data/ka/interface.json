@@ -1,0 +1,20 @@
+{
+    "pages": [
+        {
+            "id": 1,
+            "title": "ჩვენს შესახებ",
+            "content": "ჩვენს შესახებ",
+            "meta_description": "ჩვენს შესახებ",
+            "meta_keywords": "ჩვენს შესახებ",
+            "meta_title": "ჩვენს შესახებ"  
+          },
+          {
+            "id": 2,
+            "title": "კონტაქტი",
+            "content": "კონტაქტი",
+            "meta_description": "კონტაქტი",
+            "meta_keywords": "კონტაქტი",
+            "meta_title": "კონტაქტი"  
+          }
+    ]
+}

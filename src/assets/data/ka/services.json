@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "ვებ საიტების დამზადება",
+        "description": "",
+        "photo": "assets/data/img/webdev.png",
+        "page": {
+            "name": "ვებ საიტების დამზადება",
+            "content": "ვებ საიტების დამზადებავებ საიტების დამზადებავებ საიტების დამზადება"
+        }
+    },
+    {
+        "id": 2,
+        "name": "Android აპლიკაციის შექმნა",
+        "description": "",
+        "photo": "assets/data/img/android2.png",
+        "page": {
+            "name": "Android აპლიკაციის შექმნა",
+            "content": "Android აპლიკაციის შექმნა Android აპლიკაციის შექმნა Android აპლიკაციის შექმნა"            
+        }
+    },
+    {
+        "id": 3,
+        "name": "iOS აპლიკაციის შექმნა",
+        "description": "",
+        "photo": "assets/data/img/ios.png",
+        "page": {
+            "name": "iOS აპლიკაციის შექმნა",
+            "content": "iOS აპლიკაციის შექმნა, iOS აპლიკაციის შექმნა, iOS აპლიკაციის შექმნა"            
+        }
+    },
+    {
+        "id": 4,
+        "name": "E-Commerce",
+        "description": "ონლაინ შოპინგი ყველა თანამედროვე სტანდარტის გათვალისწინებიტ",
+        "photo": "assets/data/img/e-cpmmerce.png",
+        "page": {
+            "name": "E-Commerce - ელექტრონული კომერცია",
+            "content": "E-Commerce - ელექტრონული კომერცია, E-Commerce - ელექტრონული კომერცია, E-Commerce - ელექტრონული კომერცია"            
+        }
+    },
+    {
+        "id": 5,
+        "name": "სტატისტიკური მონაცემების წარმოება",
+        "description": "",
+        "photo": "assets/data/img/statistic.png",
+        "page": {
+            "name": "სტატისტიკური მონაცემების წარმოება",
+            "content": "სტატისტიკური მონაცემების წარმოება, სტატისტიკური მონაცემების წარმოება, სტატისტიკური მონაცემების წარმოება"            
+        }
+    },
+    {
+        "id": 6,
+        "name": "მონაცემთა ბაზის ოპტიმიზაცია",
+        "description": "",
+        "photo": "assets/data/img/db.png",
+        "page": {
+            "name": "მონაცემთა ბაზის ოპტიმიზაცია",
+            "content": "მონაცემთა ბაზის ოპტიმიზაცია, მონაცემთა ბაზის ოპტიმიზაცია, მონაცემთა ბაზის ოპტიმიზაცია"            
+        }
+    },
+    {
+        "id": 7,
+        "name": "Visa/Mastercard გადახდის სისტემის ინტეგრაცია",
+        "description": "",
+        "photo": "assets/data/img/visa.png",
+        "page": {
+            "name": "Visa/Mastercard გადახდის სისტემის ინტეგრაცია",
+            "content": "Visa/Mastercard გადახდის სისტემის ინტეგრაცია, Visa/Mastercard გადახდის სისტემის ინტეგრაცია, Visa/Mastercard გადახდის სისტემის ინტეგრაცია"            
+        }
+    },
+    {
+        "id": 8,
+        "name": "Smart Contracts",
+        "description": "Smart Contracts ბლოკჩეინ ტექნოლოგიის გამოყენებით",
+        "photo": "assets/data/img/blockchain.png",
+        "page": {
+            "name": "Smart Contracts ბლოკჩეინ ტექნოლოგიის გამოყენებით",
+            "content": "Smart Contracts ბლოკჩეინ ტექნოლოგიის გამოყენებით, Smart Contracts ბლოკჩეინ ტექნოლოგიის გამოყენებით, Smart Contracts ბლოკჩეინ ტექნოლოგიის გამოყენებით"            
+        }
+    },
+    {
+        "id": 9,
+        "name": "SEO ოპტიმიზაცია",
+        "description": "Web Site ოპტიმიზაცია",
+        "photo": "assets/data/img/seo.png",
+        "page": {
+            "name": "Web Site ოპტიმიზაცია",
+            "content": "Web Site ოპტიმიზაცია, Web Site ოპტიმიზაცია, Web Site ოპტიმიზაცია"            
+        }
+    }
+]
